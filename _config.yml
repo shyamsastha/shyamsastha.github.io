@@ -24,7 +24,7 @@ jekyll-mentions:
   base_url: https://twitter.com
 
 # Use the Minimal theme
-remote_theme: pages-themes/minimal@v0.2.0
+remote_theme: pages-themes/minimal
 
 # Enable necessary plugins
 plugins:
