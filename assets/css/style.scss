@@ -7,9 +7,24 @@
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    max-width: 600px; /* Adjust as needed */
 }
 
 .publication img {
-    width: 150px;
+    width: 150px; /* Fixed width */
+    height: 150px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensures the image is cropped rather than stretched */
     margin-right: 15px;
+}
+
+.publication-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px; /* Same as image height */
+    overflow: hidden; /* Prevents text overflow */
+}
+
+.publication-links {
+    margin-top: 5px; /* Space between text and links */
 }
