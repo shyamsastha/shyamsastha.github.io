@@ -2,3 +2,14 @@
 ---
 
 @import "jekyll-theme-minimal";
+
+.publication {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.publication img {
+    width: 150px;
+    margin-right: 15px;
+}
