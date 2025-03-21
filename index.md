@@ -52,5 +52,6 @@ If you would like to collaborate, please get in touch!
   *   CSCW \| 2024, 2025
   *   SIGCSE TS \| 2024
   *   ITiCSE \| 2024, 2025
+
 ### Committees
   *   AC for C&C 2024
