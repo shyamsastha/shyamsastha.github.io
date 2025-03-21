@@ -2,38 +2,47 @@
 body {
   background-color: #ffffff;
   color: #333;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* Dark Mode Styles */
+/* Dark Mode */
 body.dark-mode {
-  background-color: #121212;
-  color: #f5f5f5;
+  background-color: #121212 !important;
+  color: #f5f5f5 !important;
 }
 
-/* Change header and footer colors */
+/* Header and Footer */
 body.dark-mode .page-header {
-  background-color: #222;
-  color: #f5f5f5;
+  background-color: #222 !important;
+  color: #f5f5f5 !important;
 }
 
 body.dark-mode .page-footer {
-  background-color: #222;
-  color: #bbb;
+  background-color: #222 !important;
+  color: #bbb !important;
 }
 
-/* Change link colors */
+/* Links */
 .dark-mode a {
-  color: #bb86fc;
+  color: #bb86fc !important;
 }
 
 .dark-mode a:hover {
-  color: #ff79c6;
+  color: #ff79c6 !important;
 }
 
 /* Buttons */
 .dark-mode button {
-  background-color: #444;
-  color: white;
-  border: 1px solid #bb86fc;
+  background-color: #444 !important;
+  color: white !important;
+  border: 1px solid #bb86fc !important;
+}
+
+/* Navbar Links */
+.dark-mode .container a {
+  color: #bb86fc !important;
+}
+
+.dark-mode .container a:hover {
+  color: #ff79c6 !important;
 }
