@@ -1,6 +1,46 @@
-title: Minimal theme
-logo: /assets/img/logo.png
-description: Minimal is a theme for GitHub Pages.
-show_downloads: true
-google_analytics:
-theme: jekyll-theme-minimal
+title: Shyama Sastha Krishnamoorthy Srinivasan
+logo: /images/DSC_0039_cropped.jpg
+description: Graduate researcher at IIIT-Delhi. Aiming to design and develop an HCAI Framework for proactive health and wellbeing by utilizing AI/LLM employing HCI.
+baseurl: "" 
+url: "https://www.shyamsastha.github.io" 
+production_url: "https://www.shyamsastha.github.io"
+
+repository: shyamsastha/shyamsastha.github.io
+
+github_username: shyamsastha
+permalink: /blog/:year/:month/:title.html
+
+twitter:
+  username: SasthaShyama
+
+sass:
+  style: compressed
+
+collections:
+  publications:
+    output: false
+
+jekyll-mentions:
+  base_url: https://twitter.com
+
+# Use the Minimal theme
+remote_theme: pages-themes/minimal@v0.2.0
+
+# Enable necessary plugins
+plugins:
+  - jekyll-remote-theme # Required for using remote themes
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-mentions
+
+# Customize Minimal theme (optional)
+minimal:
+  skin: dark  # This setting does not exist by default; dark mode needs CSS customization
+
+# Set default layout
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
