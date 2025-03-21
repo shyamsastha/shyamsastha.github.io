@@ -6,39 +6,39 @@
 .publication {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
-    max-width: 600px;
+    margin-bottom: 20px;
+    max-width: 700px; /* Adjust width if needed */
 }
 
 .publication img {
-    width: 150px;
-    height: 150px; 
-    object-fit: cover; /* Ensures image fills space without distortion */
-    margin-right: 10px;
-    border-radius: 5px; /* Optional: makes images look cleaner */
+    width: 140px; /* Ensures uniform image width */
+    height: 140px; /* Ensures uniform image height */
+    object-fit: cover; /* Prevents image distortion while cropping */
+    margin-right: 15px;
+    border-radius: 5px; /* Optional: rounds corners for a cleaner look */
 }
 
 .publication-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: auto; /* Allows text to fit dynamically */
-    max-height: 150px; /* Ensures content aligns with image */
+    max-height: 140px; /* Matches image height */
     overflow: hidden;
 }
 
 .publication-content h3 {
     margin: 0;
-    font-size: 1em; /* Ensures title fits well */
+    font-size: 1em; /* Keeps the title compact */
 }
 
 .publication-content p {
-    margin: 2px 0; /* Reduces extra spacing */
+    margin: 2px 0; /* Minimizes spacing between elements */
     font-size: 0.9em;
+    line-height: 1.2; /* Reduces excessive spacing */
 }
 
 .publication-content a {
     font-size: 0.85em;
     margin-right: 8px;
+    text-decoration: none; /* Removes underline for a cleaner look */
 }
-
