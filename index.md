@@ -40,7 +40,7 @@ If you would like to collaborate, please get in touch!
 *   TA - Analysis and Design of Algorithms \| Winter 2022
 
 ## Services
-  ### Reviewing
+### Reviewing
   *   CHI LBW \| 2023, 2024, 2025
   *   CHI Case Studies \| 2024, 2025
   *   CHI Papers \| 2025
@@ -52,5 +52,5 @@ If you would like to collaborate, please get in touch!
   *   CSCW \| 2024, 2025
   *   SIGCSE TS \| 2024
   *   ITiCSE \| 2024, 2025
-  ### Committees
+### Committees
   *   AC for C&C 2024
