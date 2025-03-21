@@ -2,7 +2,7 @@
 
 ### 2025  
 <div class="publication">
-    <img src="/images/mental-health-llm.jpg" alt="Demystifying Mental Health Reports">
+    <img src="/assets/images/pubs/Design_Architecture.png" alt="Demystifying Mental Health Reports">
     <div class="publication-content">
         <h3><a href="https://programs.sigchi.org/chi/2025/program/content/194526">Demystifying Mental Health Reports Through an LLM-based Approach</a></h3>
         <p><i>SS K Srinivasan, A Bahadur, S Singh, S K Gupta, V Jain, K S Deb, M Kumar, P Singh</i></p>
@@ -17,7 +17,7 @@
 
 ### 2024  
 <div class="publication">
-    <img src="/images/blips.jpg" alt="BLIPS: Bluetooth Locator">
+    <img src="/assets/images/pubs/workflow_diagram.png" alt="BLIPS: Bluetooth Locator">
     <div class="publication-content">
         <h3><a href="https://dl.acm.org/doi/pdf/10.1145/3674829.3675057">BLIPS: Bluetooth locator for an Indoor Positioning System</a></h3>
         <p><i>SS K Srinivasan, S Singh, P Singh, M Kumar</i></p>
@@ -31,7 +31,7 @@
 </div>
 
 <div class="publication">
-    <img src="/images/hybrid-teaching.jpg" alt="Hybrid Teaching Report">
+    <img src="/assets/images/pubs/Attendance_analysis_granular.png" alt="Hybrid Teaching Report">
     <div class="publication-content">
         <h3><a href="https://dl.acm.org/doi/pdf/10.1145/3626253.3635486">An Experience Report on Teaching Hybrid Mode</a></h3>
         <p><i>SS K Srinivasan, A Gupta, P Jalote</i></p>
