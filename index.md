@@ -1,7 +1,5 @@
 ---
 layout: default
-title: "Home"
-class: home
 ---
 
 ## About Me
