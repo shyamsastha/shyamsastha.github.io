@@ -6,25 +6,39 @@
 .publication {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
-    max-width: 600px; /* Adjust as needed */
+    margin-bottom: 15px;
+    max-width: 600px;
 }
 
 .publication img {
-    width: 150px; /* Fixed width */
-    height: 150px; /* Fixed height for consistency */
-    object-fit: cover; /* Ensures the image is cropped rather than stretched */
-    margin-right: 15px;
+    width: 150px;
+    height: 150px; 
+    object-fit: cover; /* Ensures image fills space without distortion */
+    margin-right: 10px;
+    border-radius: 5px; /* Optional: makes images look cleaner */
 }
 
 .publication-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 150px; /* Same as image height */
-    overflow: hidden; /* Prevents text overflow */
+    height: auto; /* Allows text to fit dynamically */
+    max-height: 150px; /* Ensures content aligns with image */
+    overflow: hidden;
 }
 
-.publication-links {
-    margin-top: 5px; /* Space between text and links */
+.publication-content h3 {
+    margin: 0;
+    font-size: 1em; /* Ensures title fits well */
 }
+
+.publication-content p {
+    margin: 2px 0; /* Reduces extra spacing */
+    font-size: 0.9em;
+}
+
+.publication-content a {
+    font-size: 0.85em;
+    margin-right: 8px;
+}
+
