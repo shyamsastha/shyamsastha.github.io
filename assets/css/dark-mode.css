@@ -1,0 +1,51 @@
+/* Default Light Mode */
+body {
+  background-color: #ffffff;
+  color: #333;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Dark Mode */
+html.dark body {
+  background-color: #121212 !important;
+  color: #eee !important;
+}
+
+/* Header and Footer */
+html.dark .page-header, 
+html.dark .page-footer {
+  background-color: #222 !important;
+  color: #bbb !important;
+}
+
+/* Links */
+html.dark a {
+  color: #bb86fc !important;
+}
+
+html.dark a:hover {
+  color: #ff79c6 !important;
+}
+
+/* Buttons */
+html.dark button {
+  background-color: #444 !important;
+  color: white !important;
+  border: 1px solid #bb86fc !important;
+}
+
+/* Navbar Links */
+html.dark .container a {
+  color: #bb86fc !important;
+}
+
+html.dark .container a:hover {
+  color: #ff79c6 !important;
+}
+
+/* All profile icons get background in dark mode */
+html.dark .profile-links img {
+  background-color: white;
+  border-radius: 50%; /* adjust as needed */
+  padding: 2px;
+}

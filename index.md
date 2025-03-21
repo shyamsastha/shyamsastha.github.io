@@ -2,122 +2,56 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+## About Me
 
-[Link to another page](./another-page.html).
+Hello there! I'm Sastha Srinivasan. A PhD student in the Center of Excellence in Human-Centered Computing and the Department of Computer Science at [IIIT-Delhi](https://iiitd.ac.in/), co-advised by [Prof. Pushpendra Singh](https://www.iiitd.ac.in/pushpendra) and [Prof. Mohan Kumar](https://www.rit.edu/directory/mjkvcs-mohan-kumar). With 3+ years of hands-on experience, my research focuses on leveraging _AI/ML_ with _sensing_ to create social impact in proactive health and wellbeing. I have previously worked as a _Programmer Analyst_ at Sara’s Inc. and Unanu, leading cloud products, analytics dashboards, and ML/AI pipeline deployments that saved time and money across industries. I hold a Master's in _Computer Systems Engineering (specializing in IoT)_ from [Northeastern University](https://catalog.northeastern.edu/graduate/engineering/multidisciplinary/cyber-physical-systems-ms/) under the guidance of [Prof. Peter O'Reilly](https://coe.northeastern.edu/people/oreilly-peter/), where I also interned at _Bose Corporation_, developing an automated testing suite for smart home security. Passionate about affective computing, I also work on side projects that intersect AI with education, and in my downtime, you’ll find me enjoying strategy games, tabletop RPGs, or reading with cocoa in hand when I do not explore the world.
 
-There should be whitespace between paragraphs.
+## Research Interests
+*   Wearables: Different modalities for sustainable proactive monitoring.
+*   AI/LLMs: Exploring new ways to fill gaps in public health information.
+*   RAI: Responsible AI for social impact through sustainability.
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+If you would like to collaborate, please get in touch!
 
-# Header 1
+## News
+*   WiP Paper accepted at CHI 25 Late-breaking Work \| Feb 2025
+*   Short Paper on BLIPS accepted at COMPASS 2024 \| Jul 2024
+*   Position Paper on analyzing missing physiological data for health management accepted at PhysioCHI 24 Workshop at CHI 24 \| Mar 2024
+*   Position Paper on generating synthetic physiological data for health management accepted at LLMCHI 24 Workshop at CHI 24. \| Mar 2024
+*   Short Paper on BLIPS accepted at COMPASS 2024 \| July 2024
+*   Poster on hybrid teaching accepted at SIGCSE TS 24 \| Mar 2024
+*   Poster on Ble IPS accepted at MLSS 2024, Okinawa, Japan. Also received the travel grant to attend the summer school \| Feb 2024
+*   Poster on Positive Aging at ACM SIGCHI Symposium for HCI & Friends 2022, Mumbai, India. Also received the travel grant to attend the symposium \| Dec 2022
+*   Joined Ph.D. at IIIT-Delhi, under the guidance of [Prof. Pushpendra Singh](https://www.iiitd.ac.in/pushpendra) and [Prof. Mohan Kumar](https://www.rit.edu/directory/mjkvcs-mohan-kumar) \| Jan 2022
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+{% include_relative _includes/publications.md %}
 
-## Header 2
+## Travel for Talks/Posters/Oral
+*   CHI 25 LBW Yokohama, Japan \| Apr 2025
+*   COMPASS 2024 Delhi, India \| Jul 2024
+*   MLSS 2024 Okinawa, Japan \| Feb 2024
+*   ACM SIGCHI Symposium for HCI & Friends 2022 Mumbai, India \| Dec 2022
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+## Teaching
+*   Head TA - Software Development Using Open Source \| Monsoon 2023
+*   Head TA - Distributed Systems Concepts and Design \| Winter 2023
+*   Head TA - Introduction to Programming \| Monsoon 2022
+*   Personal TA - Introduction to Programming \| Supporting special needs student in Monsoon 2022
+*   TA - Analysis and Design of Algorithms \| Winter 2022
 
-### Header 3
+## Services
+### Reviewing
+  *   CHI LBW \| 2023, 2024, 2025
+  *   CHI Case Studies \| 2024, 2025
+  *   CHI Papers \| 2025
+  *   TEI WiP \| 2024, 2025
+  *   IMX Technical Papers \| 2024
+  *   IMWUT \| 2024
+  *   DIS \| 2024
+  *   C&C Papers \| 2024, 2025
+  *   CSCW \| 2024, 2025
+  *   SIGCSE TS \| 2024
+  *   ITiCSE \| 2024, 2025
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+### Committees
+  *   AC for C&C 2024

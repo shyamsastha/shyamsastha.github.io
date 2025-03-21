@@ -2,3 +2,95 @@
 ---
 
 @import "jekyll-theme-minimal";
+
+// ——————————————————————————————————————————————————————
+/* ——————————————————————————————————————————————————————
+   PROFILE LINKS (Dark Mode Support + Layout Fixes)
+—————————————————————————————————————————————————————— */
+
+/* Container for profile icons */
+.profile-links {
+  display: flex;
+  align-items: center;
+  gap: 0.5em; /* Optional: space between icons */
+}
+
+/* Icon base styling — ensures same height and spacing */
+.profile-links img {
+  height: 30px;           /* Fixed height */
+  width: auto;            /* Let width adjust */
+  vertical-align: middle; /* Align nicely with other content */
+  display: inline-block;
+  background-color: transparent; /* Default: no background */
+  border-radius: 4px;     /* Slight rounding for all */
+  padding: 2px;           /* Adjust spacing if needed */
+}
+
+/* Add white background in dark mode for visibility */
+html.dark .profile-links img {
+  background-color: white;
+}
+
+/* ICON SWAPPING (Dark Mode) */
+
+/* Hide dark icons by default */
+.profile-links img.dark {
+  display: none;
+}
+
+/* In dark mode, swap the icons */
+html.dark .profile-links img.light {
+  display: none;
+}
+html.dark .profile-links img.dark {
+  display: inline;
+}
+
+// ——————————————————————————————————————————————————————
+
+.publication {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    max-width: 700px; /* Ensures a neat layout */
+}
+
+.publication img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 5px; /* Optional: rounded corners */
+}
+
+.publication-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 140px; /* Ensures text and image align */
+    overflow: hidden;
+}
+
+.publication-content h3 {
+    margin: 0;
+    font-size: 1em;
+}
+
+.publication-content p {
+    margin: 2px 0;
+    font-size: 0.9em;
+    line-height: 1.2;
+}
+
+.publication-links {
+    display: flex;
+    gap: 8px; /* Ensures proper spacing */
+    font-size: 0.85em;
+    margin-top: 5px;
+}
+
+.publication-links a {
+    text-decoration: none;
+    white-space: nowrap; /* Prevents wrapping */
+}
+
