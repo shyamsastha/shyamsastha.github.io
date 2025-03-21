@@ -14,12 +14,12 @@ Hello there! I'm Sastha Srinivas. A PhD student in the Center of Excellence in H
 If you would like to collaborate, please get in touch!
 
 ## News
-*   Travelling to attend CHI 25, Yokohama Japan | Apr 2025
 *   WiP Paper accepted at CHI 25 Late-breaking Work | Feb 2025
 *   Short Paper on BLIPS accepted at COMPASS 2024 | Jul 2024
 *   Position Paper on analyzing missing physiological data for health management accepted at PhysioCHI 24 Workshop at CHI 24 | Mar 2024
 *   Position Paper on generating synthetic physiological data for health management accepted at LLMCHI 24 Workshop at CHI 24. | Mar 2024
-*   Poster on hybrid teaching accepted at SIGCSE TS 24 | Nov 2024
+*   Short Paper on BLIPS accepted at COMPASS 2024 | July 2024
+*   Poster on hybrid teaching accepted at SIGCSE TS 24 | Mar 2024
 *   Poster on Ble IPS accepted at MLSS 2024, Okinawa, Japan. Also received the travel grant to attend the summer school | Feb 2024
 *   Poster on Positive Aging at ACM SIGCHI Symposium for HCI & Friends 2022, Mumbai, India. Also received the travel grant to attend the symposium | Dec 2022
 *   Joined Ph.D. at IIIT Delhi, under the guidance of [Prof. Pushpendra Singh](https://www.iiitd.ac.in/pushpendra) and [Prof. Mohan Kumar](https://www.rit.edu/directory/mjkvcs-mohan-kumar) | Jan 2022
