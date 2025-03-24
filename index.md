@@ -9,7 +9,7 @@ Hello there! I'm Sastha Srinivasan. A PhD student in the Center of Excellence in
 ## Research Interests
 *   Wearables: Different modalities for sustainable proactive monitoring.
 *   AI/LLMs: Exploring new ways to fill gaps in public health information.
-*   Responsible AI: Responsible AI for social impact through sustainability.
+*   RAI: Responsible AI for social impact through sustainability.
 
 If you would like to collaborate, please get in touch!
 
