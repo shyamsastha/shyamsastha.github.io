@@ -41,6 +41,21 @@
         </ul>
         {% endif %}
 
+        {% if site.google_scholar or site.orcid %}
+        <nav class="profile-links">
+          {% if site.google_scholar %}
+            <a href="{{ site.google_scholar }}" target="_blank" rel="noopener">
+              <img src="/assets/icons/google-scholar.png" alt="Google Scholar" />
+            </a>
+          {% endif %}
+          {% if site.orcid %}
+            <a href="{{ site.orcid }}" target="_blank" rel="noopener">
+              <img src="/assets/icons/orcid.png" alt="ORCID" />
+            </a>
+          {% endif %}
+        </nav>
+        {% endif %}
+
        <!-- 🌙 Dark Mode Toggle Button -->
        <button id="dark-mode-toggle" style="
         padding: 8px 12px;
