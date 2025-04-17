@@ -3,20 +3,34 @@
 
 @import "jekyll-theme-minimal";
 
-// —————————————————————————————————————————————————————————
-// profile‑link icons (match dark‑mode toggle height of 30px)
+// ——————————————————————————————————————————————————————
+// profile‑link icon swap for dark mode
 .profile-links {
   display: flex;
   align-items: center;
 }
 
+// hide the “dark” variants by default
+.profile-links img.dark {
+  display: none;
+}
+
+// when dark‑mode is active (.dark on <html>), flip them
+.dark .profile-links img.light {
+  display: none;
+}
+.dark .profile-links img.dark {
+  display: inline;
+}
+
+// (re‑use your existing sizing rule—e.g. match toggle height)
 .profile-links img {
-  height: 30px;         /* same as 14px font + 2×8px padding */
-  width: auto;          /* keep aspect ratio */
+  height: 30px;      // same as your toggle button
+  width: auto;
   vertical-align: text-bottom;
   margin: 0 0.25em;
 }
-// —————————————————————————————————————————————————————————
+// ——————————————————————————————————————————————————————
 
 .publication {
     display: flex;
