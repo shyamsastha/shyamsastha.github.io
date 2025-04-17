@@ -17,9 +17,6 @@ repository: shyamsastha/shyamsastha.github.io
 github_username: shyamsastha
 permalink: /blog/:year/:month/:title.html
 
-twitter:
-  username: SasthaShyama
-
 # Use the Minimal theme
 remote_theme: pages-themes/minimal
 
