@@ -4,32 +4,48 @@
 @import "jekyll-theme-minimal";
 
 // ——————————————————————————————————————————————————————
-// profile‑link icon swap for dark mode
+/* ——————————————————————————————————————————————————————
+   PROFILE LINKS (Dark Mode Support + Layout Fixes)
+—————————————————————————————————————————————————————— */
+
+/* Container for profile icons */
 .profile-links {
   display: flex;
   align-items: center;
+  gap: 0.5em; /* Optional: space between icons */
 }
 
-// hide the “dark” variants by default
+/* Icon base styling — ensures same height and spacing */
+.profile-links img {
+  height: 30px;           /* Fixed height */
+  width: auto;            /* Let width adjust */
+  vertical-align: middle; /* Align nicely with other content */
+  display: inline-block;
+  background-color: transparent; /* Default: no background */
+  border-radius: 4px;     /* Slight rounding for all */
+  padding: 2px;           /* Adjust spacing if needed */
+}
+
+/* Add white background in dark mode for visibility */
+html.dark .profile-links img {
+  background-color: white;
+}
+
+/* ICON SWAPPING (Dark Mode) */
+
+/* Hide dark icons by default */
 .profile-links img.dark {
   display: none;
 }
 
-// when dark‑mode is active (.dark on <html>), flip them
-.dark .profile-links img.light {
+/* In dark mode, swap the icons */
+html.dark .profile-links img.light {
   display: none;
 }
-.dark .profile-links img.dark {
+html.dark .profile-links img.dark {
   display: inline;
 }
 
-// (re‑use your existing sizing rule—e.g. match toggle height)
-.profile-links img {
-  height: 30px;      // same as your toggle button
-  width: auto;
-  vertical-align: text-bottom;
-  margin: 0 0.25em;
-}
 // ——————————————————————————————————————————————————————
 
 .publication {
