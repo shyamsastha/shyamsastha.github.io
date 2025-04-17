@@ -42,3 +42,12 @@ html.dark .container a {
 html.dark .container a:hover {
   color: #ff79c6 !important;
 }
+
+/* Adding background for dark mode profile icons*/
+/* Add background behind dark mode icons */
+html.dark .profile-links .icon img.dark {
+  background-color: white;
+  border-radius: 50%; /* optional: makes it circular */
+  padding: 4px;       /* optional: spacing inside the background */
+}
+
