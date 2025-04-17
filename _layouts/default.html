@@ -29,10 +29,6 @@
         <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
         {% endif %}
 
-        {% if site.github.is_user_page %}
-        <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
-        {% endif %}
-
         {% if site.show_downloads %}
         <ul class="downloads">
           <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
@@ -41,20 +37,27 @@
         </ul>
         {% endif %}
 
-        {% if site.google_scholar or site.orcid %}
-        <nav class="profile-links">
-          {% if site.google_scholar %}
-            <a href="{{ site.google_scholar }}" target="_blank" rel="noopener">
-              <img src="/assets/icons/google-scholar.png" alt="Google Scholar" />
-            </a>
-          {% endif %}
-          {% if site.orcid %}
-            <a href="{{ site.orcid }}" target="_blank" rel="noopener">
-              <img src="/assets/icons/orcid.png" alt="ORCID" />
-            </a>
-          {% endif %}
+        <!-- ✨ Profile Links -->
+        <nav class="profile-links" aria-label="quick links">
+          <a href="{{ site.github }}"           target="_blank" rel="noopener">
+            <img src="/assets/icons/github.png"         alt="GitHub">
+          </a>
+          <a href="{{ site.linkedin }}"         target="_blank" rel="noopener">
+            <img src="/assets/icons/linkedin.png"       alt="LinkedIn">
+          </a>
+          <a href="{{ site.twitter }}"          target="_blank" rel="noopener">
+            <img src="/assets/icons/twitter.png"        alt="Twitter">
+          </a>
+          <a href="{{ site.orcid }}"            target="_blank" rel="noopener">
+            <img src="/assets/icons/orcid.png"          alt="ORCID">
+          </a>
+          <a href="{{ site.google_scholar }}"   target="_blank" rel="noopener">
+            <img src="/assets/icons/google-scholar.png" alt="Google Scholar">
+          </a>
+          <a href="{{ site.email }}">
+            <img src="/assets/icons/email.gif"           alt="Email">
+          </a>
         </nav>
-        {% endif %}
 
        <!-- 🌙 Dark Mode Toggle Button -->
        <button id="dark-mode-toggle" style="
