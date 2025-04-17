@@ -6,9 +6,9 @@ body {
 }
 
 /* Dark Mode */
-body.dark-mode {
+html.dark body {
   background-color: #121212 !important;
-  color: #f5f5f5 !important;
+  color: #eee !important;
 }
 
 /* Header and Footer */
