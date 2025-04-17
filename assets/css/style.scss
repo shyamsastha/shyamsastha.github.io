@@ -3,6 +3,21 @@
 
 @import "jekyll-theme-minimal";
 
+// —————————————————————————————————————————————————————————
+// profile‑link icons (Google Scholar, ORCID, etc.)
+.profile-links img {
+  /* make icon as tall as one line of text */
+  height: 1em;
+  /* keep its aspect ratio */
+  width: auto;
+  /* align to text baseline */
+  vertical-align: text-bottom;
+  /* small gap around each icon */
+  margin: 0 0.25em;
+}
+// —————————————————————————————————————————————————————————
+
+
 .publication {
     display: flex;
     align-items: center;
