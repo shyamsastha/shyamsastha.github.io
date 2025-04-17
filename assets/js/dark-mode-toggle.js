@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   toggleButton.addEventListener("click", function () {
-    root.classList.toggle("dark");
+    html.classList.toggle("dark");
 
     if (root.classList.contains("dark")) {
       localStorage.setItem("dark-mode", "enabled");
