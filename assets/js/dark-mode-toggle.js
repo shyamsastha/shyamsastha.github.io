@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const toggleButton = document.getElementById("dark-mode-toggle");
-  const body = document.body;
+  const root = document.documentElement; // 👈 targets <html>
 
   // Ensure the button exists before attaching the event
   if (!toggleButton) {
@@ -8,16 +8,16 @@ document.addEventListener("DOMContentLoaded", function () {
     return;
   }
 
-  // Load dark mode state from localStorage
+  // Load saved preference
   if (localStorage.getItem("dark-mode") === "enabled") {
-    body.classList.add("dark-mode");
+    root.classList.add("dark");
     toggleButton.innerText = "☀️ Light Mode";
   }
 
   toggleButton.addEventListener("click", function () {
-    body.classList.toggle("dark-mode");
+    root.classList.toggle("dark");
 
-    if (body.classList.contains("dark-mode")) {
+    if (root.classList.contains("dark")) {
       localStorage.setItem("dark-mode", "enabled");
       toggleButton.innerText = "☀️ Light Mode";
     } else {
