@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const toggleButton = document.getElementById("dark-mode-toggle");
-  const root = document.documentElement; // 👈 targets <html>
+  const html = document.documentElement; // 👈 targets <html>
 
   // Ensure the button exists before attaching the event
   if (!toggleButton) {
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Load saved preference
   if (localStorage.getItem("dark-mode") === "enabled") {
-    root.classList.add("dark");
+    html.classList.add("dark");
     toggleButton.innerText = "☀️ Light Mode";
   }
 
