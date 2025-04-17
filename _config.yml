@@ -1,8 +1,13 @@
 title: Shyama Sastha Krishnamoorthy Srinivasan
 logo: /assets/images/portrait (2).jpeg
 description: Graduate researcher at IIIT-Delhi. Aiming to employ HCI + Critical Computing to design and develop an HCAI Framework for proactive health and wellbeing.
-google_scholar: "https://scholar.google.com/citations?user=8eSnUXoAAAAJ&hl=en"
+github: "https://github.com/shyamsastha"
+linkedin: "https://www.linkedin.com/in/shyamsastha/"
+twitter: "https://x.com/SasthaShyama"
+email: "mailto:shyamas@iiitd.ac.in"
 orcid: "https://orcid.org/0000-0001-5787-4858"
+google_scholar: "https://scholar.google.com/citations?user=8eSnUXoAAAAJ&hl=en"
+
 baseurl: "" 
 url: "https://shyamsastha.github.io" 
 production_url: "https://shyamsastha.github.io"
