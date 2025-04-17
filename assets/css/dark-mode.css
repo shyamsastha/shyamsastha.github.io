@@ -12,37 +12,37 @@ html.dark body {
 }
 
 /* Header and Footer */
-body.dark-mode .page-header {
+html.dark .page-header {
   background-color: #222 !important;
   color: #f5f5f5 !important;
 }
 
-body.dark-mode .page-footer {
+html.dark .page-footer {
   background-color: #222 !important;
   color: #bbb !important;
 }
 
 /* Links */
-.dark-mode a {
+html.dark a {
   color: #bb86fc !important;
 }
 
-.dark-mode a:hover {
+html.dark a:hover {
   color: #ff79c6 !important;
 }
 
 /* Buttons */
-.dark-mode button {
+html.dark button {
   background-color: #444 !important;
   color: white !important;
   border: 1px solid #bb86fc !important;
 }
 
 /* Navbar Links */
-.dark-mode .container a {
+html.dark .container a {
   color: #bb86fc !important;
 }
 
-.dark-mode .container a:hover {
+html.dark .container a:hover {
   color: #ff79c6 !important;
 }
