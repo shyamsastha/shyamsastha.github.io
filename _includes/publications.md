@@ -4,13 +4,13 @@
 <div class="publication">
     <img src="/assets/images/pubs/Design_Architecture.png" alt="Mental Health LLM">
     <div class="publication-content">
-        <h3><a href="https://programs.sigchi.org/chi/2025/program/content/194526">Demystifying Mental Health Reports Through an LLM-based Approach</a></h3>
+        <h3><a href="https://dl.acm.org/doi/pdf/10.1145/3706599.3720208">Demystifying Mental Health Reports Through an LLM-based Approach</a></h3>
         <p><i><b>SS K Srinivasan,</b> A Bahadur, S Singh, S K Gupta, V Jain, K S Deb, M Kumar, P Singh</i></p>
         <p><b>CHI EA, 2025</b></p>
         <p>This work simplifies mental health diagnoses for patients and provides summaries for doctors.</p>
         <div class="publication-links">
-            <a href="https://programs.sigchi.org/chi/2025/program/content/194526">[PDF]</a> | 
-            <a href="https://programs.sigchi.org/chi/2025/program/content/194526">[DOI]</a>
+            <a href="https://dl.acm.org/doi/pdf/10.1145/3706599.3720208">[PDF]</a> | 
+            <a href="https://doi.org/10.1145/3706599.3720208">[DOI]</a>
         </div>
     </div>
 </div>
