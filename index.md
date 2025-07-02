@@ -29,6 +29,7 @@ layout: default
   });
 </script>
 
+<script src="{{ '/script/toggle-profile.js' | relative_url }}"></script>
 
 ## About Me
 
