@@ -17,7 +17,7 @@ layout: default
     const pics = [
       "{{ '/assets/images/profile/1000027231.jpg' | relative_url }}",
       "{{ '/assets/images/profile/DSC_0039_cropped.jpg' | relative_url }}",
-      "{{ '/assets/images/profile/PXL_20250425_004018099.PORTRAIT.jpg' | relative_url }}"
+      "{{ '/assets/images/profile/PXL_20250425_004018099.PORTRAIT.jpg' | relative_url }}",
       "{{ '/assets/images/profile/portrait (2).jpeg' | relative_url }}"
     ];
     let idx = 0;
