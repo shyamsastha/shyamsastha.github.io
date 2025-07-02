@@ -2,6 +2,34 @@
 layout: default
 ---
 
+<!-- Profile picture toggle -->
+<p align="center">
+  <img
+    id="profile-pic"
+    src="{{ '/assets/images/profile/1000027231.jpg' | relative_url }}"
+    alt="Profile picture"
+    style="max-width:200px; cursor:pointer;"
+  />
+</p>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const pics = [
+      "{{ '/assets/images/profile/1000027231.jpg' | relative_url }}",
+      "{{ '/assets/images/profile/DSC_0039_cropped.jpg' | relative_url }}",
+      "{{ '/assets/images/profile/PXL_20250425_004018099.PORTRAIT.jpg' | relative_url }}"
+      "{{ '/assets/images/profile/portrait (2).jpeg' | relative_url }}"
+    ];
+    let idx = 0;
+    const img = document.getElementById("profile-pic");
+    img.addEventListener("click", function() {
+      idx = (idx + 1) % pics.length;
+      this.src = pics[idx];
+    });  // change src on click :contentReference[oaicite:1]{index=1}
+  });
+</script>
+
+
 ## About Me
 
 Hello there! I'm Sastha Srinivasan. A PhD student in the Center of Excellence in Human-Centered Computing and the Department of Computer Science at [IIIT-Delhi](https://iiitd.ac.in/), co-advised by [Prof. Pushpendra Singh](https://www.iiitd.ac.in/pushpendra) and [Prof. Mohan Kumar](https://www.rit.edu/directory/mjkvcs-mohan-kumar). With 3+ years of hands-on experience, my doctoral research focuses on leveraging _AI/ML_ with _sensing_ to create social impact in proactive health and wellbeing suitable to the _Collective Care_ settings prevalent in India. I have previously worked as a _Programmer Analyst_ at Sara’s Inc. and Unanu, leading cloud products, analytics dashboards, and ML/AI pipeline deployments that saved time and money across industries. I hold a Master's in _Computer Systems Engineering (specializing in IoT)_ from [Northeastern University](https://catalog.northeastern.edu/graduate/engineering/multidisciplinary/cyber-physical-systems-ms/) under the guidance of [Prof. Peter O'Reilly](https://coe.northeastern.edu/people/oreilly-peter/), where I also interned at _Bose Corporation_, developing an automated testing suite for smart home security. Passionate about affective computing, I also work on side projects that intersect AI with education, and in my downtime, you’ll find me enjoying strategy games, tabletop RPGs, or reading with a cup of cocoa in hand when I do not explore the world.
