@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // our cycle of pics
   const pics = [
     "/assets/images/profile/1000027231.jpg",
-    "/assets/images/profile/DSC_0039_cropped.jpg",
+    "/assets/images/profile/DSC_0039.jpg",
     "/assets/images/profile/PXL_20250425_004018099_PORTRAIT.jpg",
     "/assets/images/profile/portrait_2.jpeg"
   ];
