@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
    // grab the <img> the theme put in .site-logo
-  const logoImg = document.querySelector(".site-logo img");
+  const logoImg = document.querySelector('img[alt="Logo"]');
   if (!logoImg) return;               // if something’s changed, bail out
   
   // our cycle of pics
