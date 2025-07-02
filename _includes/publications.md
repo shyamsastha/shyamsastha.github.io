@@ -1,6 +1,20 @@
 ## [Publications]
 
-### 2025  
+### 2025
+<div class="publication">
+    <img src="/assets/images/pubs/workflow_v2.png" alt="TIES">
+    <div class="publication-content">
+        <h3><a href="https://shyamsastha.github.io/">Leveraging Familiarity with Television to Enrich Older Adults' Engagement and Wellbeing: A Feasibility Study Using Video Probes</a></h3>
+        <p><i><b>SS K Srinivasan,</b> M Kumar, P Singh</i></p>
+        <p><b>CSCW, 2025</b></p>
+        <p>This work explores the use of TV as a medium of intervention for older adults' social connectedness, security, and wellbeing.</p>
+        <div class="publication-links">
+            <a href="https://shyamsastha.github.io/">[PDF]</a> | 
+            <a href="https://shyamsastha.github.io/">[DOI]</a>
+        </div>
+    </div>
+</div>
+
 <div class="publication">
     <img src="/assets/images/pubs/Design_Architecture.png" alt="Mental Health LLM">
     <div class="publication-content">
