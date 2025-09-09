@@ -4,7 +4,7 @@
 <div class="publication">
     <img src="/assets/images/pubs/Sample_Prototype.png" alt="Collective Care Sample Prototype">
     <div class="publication-content">
-        <h3><a href="https://shyamsastha.github.io/">Unpacking Personal(?!) Health Informatics: An Investigation of Awareness, Understanding, And Leveraged Utility in India</a></h3>
+        <h3><a href="https://doi.org/10.48550/arXiv.2509.01231">Unpacking Personal(?!) Health Informatics: An Investigation of Awareness, Understanding, And Leveraged Utility in India</a></h3>
         <p><i><b>SS K Srinivasan,</b> M Kumar, P Singh</i></p>
         <p><b>CSCW, 2025</b></p>
         <p>This work seeks to understand how people use PHI, why it is not just "personal" anymore, and ways to keep tech inclusive in Collective Care.</p>
