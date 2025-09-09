@@ -16,6 +16,7 @@ Hello there! I'm Sastha Srinivasan. A PhD student in the Center of Excellence in
 If you would like to collaborate, please get in touch!
 
 ## News
+*   Health Sharing Study for Collective Care published in arXiv \| Sep 2025
 *   TIES Paper accepted at CSCW 25 \| Aug 2025
 *   WiP Paper accepted at CHI 25 Late-breaking Work \| Feb 2025
 *   Short Paper on BLIPS accepted at COMPASS 2024 \| Jul 2024
@@ -30,12 +31,14 @@ If you would like to collaborate, please get in touch!
 {% include_relative _includes/publications.md %}
 
 ## Travel for Talks/Posters/Oral
+*   CSCW 25 Bergen, Norway \| Oct 2025
 *   CHI 25 LBW Yokohama, Japan \| Apr 2025
 *   COMPASS 2024 Delhi, India \| Jul 2024
 *   MLSS 2024 Okinawa, Japan \| Feb 2024
 *   ACM SIGCHI Symposium for HCI & Friends 2022 Mumbai, India \| Dec 2022
 
 ## Teaching
+*   Head TA - Computer Networks \| Monsoon 2025
 *   Head TA - Software Development Using Open Source \| Monsoon 2023
 *   Head TA - Distributed Systems Concepts and Design \| Winter 2023
 *   Head TA - Introduction to Programming \| Monsoon 2022
@@ -53,8 +56,17 @@ If you would like to collaborate, please get in touch!
   *   DIS \| 2024
   *   C&C Papers \| 2024, 2025
   *   CSCW \| 2024, 2025
-  *   SIGCSE TS \| 2024
-  *   ITiCSE \| 2024, 2025
+  *   SIGCSE TS Posters \| 2024
+  *   SIGCSE TS Virtual Papers \| 2024
+  *   SIGCSE TS Virtual Posters/Lightning Talks \| 2024
+  *   ITiCSE Papers \| 2025
+  *   ITiCSE Posters \| 2024
 
 ### Committees
-  *   AC for C&C 2024
+  *   TEI WiP \| PC 2026
+  *   C&C Papers \| PC 2024
+  *   iTiCSE Papers \| PC 2025
+  *   iTiCSE Posters \| PC 2024
+  *   SIGCSE Virtual Papers \| PC 2024
+  *   SIGCSE Virtual Posters/Lightning Talks \| PC 2024
+  *   SIGCSE Posters \| PC 2024
