@@ -2,6 +2,20 @@
 
 ### 2025
 <div class="publication">
+    <img src="/assets/images/pubs/Sample_Prototype.png" alt="Collective Care Sample Prototype">
+    <div class="publication-content">
+        <h3><a href="https://shyamsastha.github.io/">Unpacking Personal(?!) Health Informatics: An Investigation of Awareness, Understanding, And Leveraged Utility in India</a></h3>
+        <p><i><b>SS K Srinivasan,</b> M Kumar, P Singh</i></p>
+        <p><b>CSCW, 2025</b></p>
+        <p>This work seeks to understand how people use PHI, why it is not just "personal" anymore, and ways to keep tech inclusive in Collective Care.</p>
+        <div class="publication-links">
+            <a href="https://arxiv.org/pdf/2509.01231">[PDF]</a> | 
+            <a href="https://doi.org/10.48550/arXiv.2509.01231">[DOI]</a>
+        </div>
+    </div>
+</div>
+
+<div class="publication">
     <img src="/assets/images/pubs/workflow_v2.png" alt="TIES">
     <div class="publication-content">
         <h3><a href="https://shyamsastha.github.io/">Leveraging Familiarity with Television to Enrich Older Adults' Engagement and Wellbeing: A Feasibility Study Using Video Probes</a></h3>
@@ -10,7 +24,7 @@
         <p>This work explores the use of TV as a medium of intervention for older adults' social connectedness, security, and wellbeing.</p>
         <div class="publication-links">
             <a href="https://shyamsastha.github.io/">[PDF]</a> | 
-            <a href="https://shyamsastha.github.io/">[DOI]</a>
+            <a href="https://doi.org/10.1145/3757624">[DOI]</a>
         </div>
     </div>
 </div>
