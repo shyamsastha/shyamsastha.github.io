@@ -7,7 +7,7 @@
         <h3><a href="https://doi.org/10.48550/arXiv.2509.01231">Unpacking Personal(?!) Health Informatics: An Investigation of Awareness, Understanding, And Leveraged Utility in India</a></h3>
         <p><i><b>SS K Srinivasan,</b> M Kumar, P Singh</i></p>
         <p><b>CSCW, 2025</b></p>
-        <p>This work seeks to understand how people use PHI, why it is not just "personal" anymore, and ways to keep tech inclusive in Collective Care.</p>
+        <p>Understanding people's PHI use and ways to operationalize tech for Collective Care.</p>
         <div class="publication-links">
             <a href="https://arxiv.org/pdf/2509.01231">[PDF]</a> | 
             <a href="https://doi.org/10.48550/arXiv.2509.01231">[DOI]</a>
@@ -21,7 +21,7 @@
         <h3><a href="https://shyamsastha.github.io/">Leveraging Familiarity with Television to Enrich Older Adults' Engagement and Wellbeing: A Feasibility Study Using Video Probes</a></h3>
         <p><i><b>SS K Srinivasan,</b> M Kumar, P Singh</i></p>
         <p><b>CSCW, 2025</b></p>
-        <p>This work explores the use of TV as a medium of intervention for older adults' social connectedness, security, and wellbeing.</p>
+        <p>Exploring the use of TV for older adults' social connectedness, security, and wellbeing.</p>
         <div class="publication-links">
             <a href="https://shyamsastha.github.io/">[PDF]</a> | 
             <a href="https://doi.org/10.1145/3757624">[DOI]</a>
@@ -35,7 +35,7 @@
         <h3><a href="https://dl.acm.org/doi/pdf/10.1145/3706599.3720208">Demystifying Mental Health Reports Through an LLM-based Approach</a></h3>
         <p><i><b>SS K Srinivasan,</b> A Bahadur, S Singh, S K Gupta, V Jain, K S Deb, M Kumar, P Singh</i></p>
         <p><b>CHI EA, 2025</b></p>
-        <p>This work simplifies mental health diagnoses for patients and provides summaries for doctors.</p>
+        <p>Simplifying mental health diagnoses for patients and providing summaries for doctors.</p>
         <div class="publication-links">
             <a href="https://dl.acm.org/doi/pdf/10.1145/3706599.3720208">[PDF]</a> | 
             <a href="https://doi.org/10.1145/3706599.3720208">[DOI]</a>
@@ -50,7 +50,7 @@
         <h3><a href="https://dl.acm.org/doi/pdf/10.1145/3674829.3675057">BLIPS: Bluetooth Locator for Indoor Positioning</a></h3>
         <p><i><b>SS K Srinivasan, S Singh,</b> P Singh, M Kumar</i></p>
         <p><b>ACM COMPASS, 2024</b></p>
-        <p>Evaluates a BLE locator using AoA for real-time indoor positioning with high accuracy.</p>
+        <p>Evaluating a BLE locator using AoA for real-time indoor positioning with high accuracy.</p>
         <div class="publication-links">
             <a href="https://dl.acm.org/doi/pdf/10.1145/3674829.3675057">[PDF]</a> | 
             <a href="https://doi.org/10.1145/3674829.3675057">[DOI]</a>
