@@ -64,7 +64,7 @@
         <h3><a href="https://dl.acm.org/doi/pdf/10.1145/3626253.3635486">Experience Report on Teaching Hybrid Mode</a></h3>
         <p><i><b>SS K Srinivasan,</b> A Gupta, P Jalote</i></p>
         <p><b>SIGCSE TS, 2024</b></p>
-        <p>Explores hybrid teaching for an introductory programming course.</p>
+        <p>Exploring hybrid teaching for an introductory programming course.</p>
         <div class="publication-links">
             <a href="https://dl.acm.org/doi/pdf/10.1145/3626253.3635486">[PDF]</a> | 
             <a href="https://doi.org/10.1145/3626253.3635486">[DOI]</a>
