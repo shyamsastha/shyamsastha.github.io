@@ -16,7 +16,6 @@ Hello there! I'm Sastha Srinivasan. A PhD student in the Center of Excellence in
 If you would like to collaborate, please get in touch!
 
 ## News
-*   Collective Care Framework submitted to CHI 25 \| Sep 2025
 *   Health Sharing Study for Collective Care published in arXiv \| Sep 2025
 *   TIES Paper accepted at CSCW 25 \| Aug 2025
 *   WiP Paper accepted at CHI 25 Late-breaking Work \| Feb 2025
