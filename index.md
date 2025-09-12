@@ -31,7 +31,7 @@ If you would like to collaborate, please get in touch!
 {% include_relative _includes/publications.md %}
 
 ## Travel for Talks/Posters/Oral
-*   CSCW 25 Yokohama, Norway \| Oct 2025
+*   CSCW 25 Bergen, Norway \| Oct 2025
 *   CHI 25 LBW Yokohama, Japan \| Apr 2025
 *   COMPASS 2024 Delhi, India \| Jul 2024
 *   MLSS 2024 Okinawa, Japan \| Feb 2024
