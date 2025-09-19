@@ -46,27 +46,14 @@ If you would like to collaborate, please get in touch!
 *   TA - Analysis and Design of Algorithms \| Winter 2022
 
 ## Services
-### Reviewing
-  *   CHI LBW \| 2023, 2024, 2025
-  *   CHI Case Studies \| 2024, 2025
-  *   CHI Papers \| 2025
-  *   TEI WiP \| 2024, 2025
-  *   IMX Technical Papers \| 2024
+### Reviewing and Program Committees (PC)
+  *   CHI \| 2023, 2024, 2025
+  *   TEI \| 2024, 2025, 2026 (PC)
+  *   IMX \| 2024
   *   IMWUT \| 2024
   *   DIS \| 2024
-  *   C&C Papers \| 2024, 2025
+  *   C&C \| 2024, 2025 (PC)
   *   CSCW \| 2024, 2025
-  *   SIGCSE TS Posters \| 2024
-  *   SIGCSE TS Virtual Papers \| 2024
-  *   SIGCSE TS Virtual Posters/Lightning Talks \| 2024
-  *   ITiCSE Papers \| 2025
-  *   ITiCSE Posters \| 2024
-
-### Committees
-  *   TEI WiP \| PC 2026
-  *   C&C Papers \| PC 2024
-  *   iTiCSE Papers \| PC 2025
-  *   iTiCSE Posters \| PC 2024
-  *   SIGCSE Virtual Papers \| PC 2024
-  *   SIGCSE Virtual Posters/Lightning Talks \| PC 2024
-  *   SIGCSE Posters \| PC 2024
+  *   SIGCSE TS \| 2024
+  *   SIGCSE TS Virtual \| 2024 (PC)
+  *   ITiCSE \| 2024 (PC), 2025 (PC)
