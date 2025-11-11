@@ -4,7 +4,7 @@
 <div class="publication">
     <img src="/assets/images/pubs/Sample_Prototype.png" alt="Collective Care Sample Prototype">
     <div class="publication-content">
-        <h3><a href="https://doi.org/10.48550/arXiv.2509.01231">Unpacking Personal(?!) Health Informatics: An Investigation of Awareness, Understanding, And Leveraged Utility in India</a></h3>
+        <h3><a href="https://doi.org/10.48550/arXiv.2509.01231">Unpacking Personal(?!) Health Informatics for Proactive Collective Care in India</a></h3>
         <p><i><b>SS K Srinivasan,</b> M Kumar, P Singh</i></p>
         <p><b>CSCW, 2025</b></p>
         <p>Understanding people's PHI use and ways to operationalize tech for Collective Care.</p>
@@ -18,12 +18,12 @@
 <div class="publication">
     <img src="/assets/images/pubs/workflow_v2.png" alt="TIES">
     <div class="publication-content">
-        <h3><a href="https://shyamsastha.github.io/">Leveraging Familiarity with Television to Enrich Older Adults' Engagement and Wellbeing: A Feasibility Study Using Video Probes</a></h3>
+        <h3><a href="https://doi.org/10.1145/3757624">Leveraging Familiarity with Television to Enrich Older Adults' Engagement and Wellbeing: A Feasibility Study Using Video Probes</a></h3>
         <p><i><b>SS K Srinivasan,</b> M Kumar, P Singh</i></p>
         <p><b>CSCW, 2025</b></p>
         <p>Exploring the use of TV for older adults' social connectedness, security, and wellbeing.</p>
         <div class="publication-links">
-            <a href="https://shyamsastha.github.io/">[PDF]</a> | 
+            <a href="https://dl.acm.org/doi/pdf/10.1145/3757624">[PDF]</a> | 
             <a href="https://doi.org/10.1145/3757624">[DOI]</a>
         </div>
     </div>
