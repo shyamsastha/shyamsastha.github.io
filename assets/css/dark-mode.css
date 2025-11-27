@@ -43,9 +43,22 @@ html.dark .container a:hover {
   color: #ff79c6 !important;
 }
 
-/* All profile icons get background in dark mode */
-html.dark .profile-links img {
-  background-color: white;
-  border-radius: 50%; /* adjust as needed */
-  padding: 2px;
+/* ---------- Profile links: dark mode overrides ---------- */
+html.dark .profile-links .icon-link {
+  color: #9aa6b2; /* muted light for dark background */
+  background: transparent;
 }
+
+html.dark .profile-links .icon-link:hover,
+html.dark .profile-links .icon-link:focus {
+  color: #58f0d4; /* accent in dark mode */
+  transform: translateY(-2px);
+}
+
+/* subtle halo for legacy image icons if any are left */
+html.dark .profile-links img {
+  background-color: rgba(255,255,255,0.06);
+  border-radius: 6px;
+  padding: 4px;
+}
+

@@ -1,6 +1,6 @@
-## [Publications]
+### Refereed Publications
 
-### 2025
+#### 2025
 <div class="publication">
     <img src="/assets/images/pubs/Sample_Prototype.png" alt="Collective Care Sample Prototype">
     <div class="publication-content">
@@ -43,7 +43,7 @@
     </div>
 </div>
 
-### 2024  
+#### 2024  
 <div class="publication">
     <img src="/assets/images/pubs/workflow_diagram.png" alt="BLIPS Bluetooth Locator">
     <div class="publication-content">

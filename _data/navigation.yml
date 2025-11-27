@@ -1,0 +1,17 @@
+# _data/navigation.yml
+
+main:
+  - title: Home
+    url: /
+  - title: About
+    url: /#about # links to about me section
+  - title: News
+    url: /#news # links to news
+  - title: Research
+    url: /#research # links to publication
+  - title: Travel
+    url: /#travel # links to travel
+  - title: Teaching
+    url: /#teaching # links to teaching
+  - title: Services
+    url: /#services # links to services
