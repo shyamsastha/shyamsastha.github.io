@@ -1,21 +1,4 @@
-title: Shyama Sastha Krishnamoorthy Srinivasan
-logo: /assets/images/profile/1000027231.jpg
-description: PhD Candidate @ IIIT-Delhi, researching HCAI for <em>Collective Care</em>.
-github: "https://github.com/shyamsastha"
-linkedin: "https://www.linkedin.com/in/shyamsastha/"
-twitter: "https://x.com/SasthaShyama"
-email: "mailto:shyamas@iiitd.ac.in"
-orcid: "https://orcid.org/0000-0001-5787-4858"
-google_scholar: "https://scholar.google.com/citations?user=8eSnUXoAAAAJ&hl=en"
-
-baseurl: "" 
-url: "https://shyamsastha.github.io" 
-production_url: "https://shyamsastha.github.io"
-
-repository: shyamsastha/shyamsastha.github.io
-
-github_username: shyamsastha
-permalink: /blog/:year/:month/:title.html
+url: "https://shyamsastha.github.io"
 
 # Use the Minimal theme
 remote_theme: pages-themes/minimal
@@ -38,3 +21,34 @@ defaults:
       path: ""
     values:
       layout: default
+
+github_username: shyamsastha
+permalink: /blog/:year/:month/:title.html
+
+# Name shown in nav (optional)
+nav_name: "Shyama Sastha Krishnamoorthy Srinivasan"
+
+favicon: /assets/images/favicon.png
+
+title: Shyama Sastha Krishnamoorthy Srinivasan
+
+# Profile image
+logo: "/assets/images/profile/1000027231.jpg"
+
+# Short role / title
+position: "PhD Candidate, CSE"
+
+# Affiliation / institution
+affiliation: "IIIT-Delhi"
+
+# One-sentence tagline / summary (supports Markdown)
+description: >
+  Researching HCAI and ubiquitous sensing for collective care
+
+# Social & academic links
+github: "https://github.com/shyamsastha"
+linkedin: "https://www.linkedin.com/in/shyamsastha/"
+twitter: "https://x.com/SasthaShyama"
+email: "mailto:shyamas@iiitd.ac.in"
+orcid: "https://orcid.org/0000-0001-5787-4858"
+google_scholar: "https://scholar.google.com/citations?user=8eSnUXoAAAAJ&hl=en"

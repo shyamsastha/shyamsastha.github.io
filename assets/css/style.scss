@@ -3,93 +3,121 @@
 @import "jekyll-theme-minimal";
 
 /* =========================================================
-   1. ONE CONSISTENT CENTER COLUMN (header + main + footer)
+   1. GLOBAL WRAPPING + LAYOUT
    ========================================================= */
 
-/* The theme uses .wrap everywhere (header, main, footer).
-   Make it the single source of truth for width + centering. */
+/* Global container used for header + main */
 .wrap {
-  max-width: 1180px;          /* controls total content width */
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-/* Divider under nav should align with the wrap as well */
-.nav-divider {
   max-width: 1180px;
-  margin: 0.5rem auto 1.25rem;
-  border: none;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* Kill the theme's full-width nav divider (single unified rule) */
+.site-header + hr,
+.nav-divider,
+hr.nav-divider {
+  display: none !important;
+  border: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Main grid:
+   desktop:
+     [profile | content]
+     [footer  | content]
+*/
+.main-grid {
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr); /* slimmer left, wider right */
+  grid-template-areas:
+    "profile content"
+    "footer  content";
+  column-gap: 1.25rem;       /* smaller gap between columns */
+  row-gap: 1.75rem;
+  margin-top: 0.25rem !important;
+  margin-bottom: 0.5rem;
+}
+
+/* Base text */
+body {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+html,
+body {
+  height: 100%;
 }
 
 /* =========================================================
-   2. PUBLICATION CARDS
-   ========================================================= */
-
-.publication {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-  max-width: 700px;
-}
-
-.publication img {
-  width: 140px;
-  height: 140px;
-  object-fit: cover;
-  margin-right: 15px;
-  border-radius: 5px;
-}
-
-.publication-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  max-height: 140px;
-  overflow: hidden;
-}
-
-.publication-content h3 {
-  margin: 0;
-  font-size: 1em;
-}
-
-.publication-content p {
-  margin: 2px 0;
-  font-size: 0.9em;
-  line-height: 1.2;
-}
-
-.publication-links {
-  display: flex;
-  gap: 8px;
-  font-size: 0.85em;
-  margin-top: 5px;
-}
-
-.publication-links a {
-  text-decoration: none;
-  white-space: nowrap;
-}
-
-/* =========================================================
-   3. HEADER & NAV
+   2. HEADER, FOOTER, & NAV
    ========================================================= */
 
 .site-header {
-  padding: 0.6rem 0;
-  background: inherit;
-  position: relative;  /* NOT fixed, so it won’t overlap the photo */
-  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  padding-top: 1.25rem !important;     /* same as top padding of custom divider*/
+  padding-bottom: 0.25rem !important;  /* less space below the nav */
+  background: #050505;          /* always dark */
+  color: #f5f5f5;          
+  border-bottom: 0 !important;
 }
 
+/* Make sure header text + links are light */
+.site-header a,
+.site-header a:visited,
+.site-header .nav-link,
+.site-header .site-name,
+.site-header .nav-toggle,
+.site-header .nav-toggle .hamburger,
+.site-header .nav-more .nav-link {
+  color: #f5f5f5;
+}
+
+/* Hover/focus state for header links */
+.site-header a:hover,
+.site-header .nav-link:hover,
+.site-header a:focus,
+.site-header .nav-link:focus {
+  color: #ff79c6;
+}
+
+/* Divider just under the nav, centered like .wrap */
+.site-header::after {
+  content: "";
+  display: block;
+  max-width: 1180px;
+  margin: 1.25rem auto 0;   /* 1.25rem above the line, 0 below */
+  border-bottom: 1.5px solid #ffffff;
+}
+
+/* Offset main content so it starts below fixed header */
+.site-main {
+  padding-top: 2.4rem !important; /* adjust if header height changes */
+}
+
+/* Header inner layout */
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+}
+
+/* Footer INSIDE the grid (left column on desktop) */
+.site-footer {
+  grid-area: footer;
+  margin-top: 0;               /* grid handles spacing */
+  align-self: start;
+  font-size: 0.85rem;
 }
 
 /* Name on the left */
@@ -100,9 +128,6 @@
   max-width: 420px;
   white-space: normal;
   line-height: 1.15;
-  writing-mode: horizontal-tb;
-  transform: none;
-  letter-spacing: normal;
 }
 
 /* Nav block on the right */
@@ -138,6 +163,7 @@
   padding: 6px;
   border-radius: 6px;
   cursor: pointer;
+  display: none;            /* hide by default (desktop) */
 }
 
 .hamburger {
@@ -173,7 +199,7 @@
   border: 1px solid rgba(255, 255, 255, 0.08);
   background: var(--nav-bg, rgba(0, 0, 0, 0.02));
   min-width: 10rem;
-  z-index: 70;
+  z-index: 1200;
 }
 
 .nav-more .nav-link {
@@ -188,77 +214,118 @@
   display: none !important;
 }
 
-/* Desktop: show “extra links” dropdown only */
+/* Desktop: don't show any hamburger for wider widths*/
 @media (min-width: 860px) {
+  .nav-toggle {
+    display: none;        /* hide hamburger button */
+  }
+
   .site-nav.open .nav-more-desktop { display: flex !important; }
   .site-nav.open .nav-more-mobile  { display: none !important; }
 }
 
 /* Mobile: all links in hamburger dropdown */
 @media (max-width: 859px) {
+  .nav-toggle {
+    display: inline-flex !important;   /* show hamburger on mobile only */
+    align-items: center;
+    justify-content: center;
+  }
+
   .nav-primary { display: none !important; }
   .site-nav.open .nav-more-mobile  { display: flex !important; }
   .site-nav.open .nav-more-desktop { display: none !important; }
 }
 
 /* =========================================================
-   4. HOME PAGE: PHOTO + CONTENT
+   3. PROFILE HEADER (avatar + role + tagline + links)
    ========================================================= */
 
-/* Two columns on wide screens; wrap is already centered */
-.home-grid {
-  display: grid;
-  grid-template-columns: 320px minmax(0, 1fr);
-  column-gap: 2.5rem;
+/* Left column: profile block */
+.profile-header {
+  grid-area: profile;
+  display: flex;
+  flex-direction: column;
   align-items: flex-start;
-  margin-top: 1.5rem;   /* breathing room under nav */
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  max-width: 300px;     /* clamp to column width */
 }
 
-/* LEFT: profile */
-.home-grid > .profile-header {
-  grid-column: 1;
-  text-align: center;
-  padding-top: 0.25rem;
-}
-
+/* Avatar block */
 .profile-photo {
   display: block;
-  margin: 0 auto 0.85rem;
-  width: 260px;
+  width: 320px;         /* matches column width */
+  max-width: 100%;
   border-radius: 14px;
   cursor: pointer;
+  margin: 0;
 }
 
-.profile-header .tagline {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+/* Info (position, affiliation, description) */
+.info-basic {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.role {
+  font-size: 0.95rem;
+}
+
+.role .position {
+  margin: 0;
+  font-weight: 600;
+}
+
+.role .affiliation {
+  margin: 0;
   color: var(--muted, #bdbdbd);
 }
 
-/* Profile links row (icons) */
-.profile-links {
-  display: flex;
-  gap: 0.6rem;
-  justify-content: center;
-  align-items: center;
-  margin-top: 0.6rem;
-  flex-wrap: nowrap;   /* prefer a single line */
+.tagline {
+  margin: 0.5rem 0 0.75rem;
+  color: var(--muted, #bdbdbd);
+
+  /* make it the same width as the profile column */
+  max-width: 320px;   /* match profile photo width */
+  width: 100%;
+  text-align: center;
 }
 
+
+.role-line {
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Social/profile links row */
+.profile-links {
+  display: flex;
+  flex-wrap: nowrap;       /* single row on desktop */
+  justify-content: space-between;
+  gap: 0.4rem;
+  align-items: center;
+  margin-top: 0.6rem;
+  width: 100%;             /* match profile-header width */
+}
+
+/* Smaller, tighter icons so all fit under the photo */
 .profile-links .icon-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  font-size: 18px;
+  width: 32px;
+  height: 32px;
+  font-size: 15px;
   border-radius: 8px;
   color: var(--muted, #bdbdbd);
   text-decoration: none;
 }
 
 .profile-links .icon-link:hover {
-  color: var(--accent, #9b5cf6);
+  color: var(--accent, #106dc5);
   transform: translateY(-2px);
 }
 
@@ -271,64 +338,7 @@
   pointer-events: none;
 }
 
-/* RIGHT: markdown content */
-.home-grid > .page-content {
-  grid-column: 2;
-  max-width: 760px;   /* nice reading width */
-}
-
-/* =========================================================
-   5. RESPONSIVE BEHAVIOR
-   ========================================================= */
-
-/* Slightly smaller phones: allow wrapping if needed */
-@media (max-width: 540px) {
-  .profile-links {
-    flex-wrap: wrap;
-  }
-}
-
-/* Very small phones: shrink icons so 8 fit nicely */
-@media (max-width: 480px) {
-  .profile-links {
-    flex-wrap: nowrap;
-    justify-content: center;
-  }
-
-  .profile-links .icon-link {
-    width: 34px;
-    height: 34px;
-    font-size: 16px;
-  }
-}
-
-/* Tablets & narrow laptops: stack profile above content, both centered */
-@media (max-width: 960px) {
-  .home-grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 1.75rem;
-  }
-
-  .profile-header {
-    width: 100%;
-    max-width: 420px;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .home-grid > .page-content {
-    width: 100%;
-    max-width: 720px;
-    margin: 0 auto;
-  }
-}
-
-/* =========================================================
-   6. DARK MODE TOGGLE
-   ========================================================= */
-
+/* Dark mode toggle sits under links */
 .dark-toggle-btn {
   margin-top: 0.9rem;
   padding: 0.35rem 0.9rem;
@@ -344,8 +354,140 @@
   background: rgba(255, 255, 255, 0.06);
 }
 
-/* Base text */
-body {
-  font-size: 16px;
-  line-height: 1.6;
+/* =========================================================
+   4. PAGE CONTENT (about, news, research, misc)
+   ========================================================= */
+
+/* Right column: main content */
+.page-content {
+  grid-area: content;
+  box-sizing: border-box;
+  width: 100% !important;      /* fill the whole grid area */
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Nuke old theme max-width / centering on direct children */
+.page-content > * {
+  max-width: none !important;
+}
+
+/* Optional: tweak headings inside the content column */
+.page-content h2,
+.page-content h3 {
+  margin-top: 1.6rem;
+  margin-bottom: 0.4rem;
+}
+
+/* Give blockquotes and tables a bit of breathing room */
+.page-content blockquote {
+  margin: 0.9rem 0;
+}
+
+.page-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.75rem 0;
+  font-size: 0.95rem;
+}
+
+.page-content td,
+.page-content th {
+  padding: 0.25rem 0.4rem;
+}
+
+.page-content i.fa-brands:hover {
+  color: var(--accent);
+}
+
+/* =========================================================
+   5. Papers (text-based listing)
+   ========================================================= */
+
+.papers {
+  margin-bottom: 2.5rem;
+}
+
+.papers h4 {
+  margin: 1.2rem 0 0.6rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.paper-item {
+  margin-bottom: 2.5rem;
+  padding-left: 0.4rem;
+  padding-top: 0.25rem;
+  border-left: 2px solid rgba(255, 255, 255, 0.12);
+}
+
+.paper-item span {
+  font-weight: 600;
+}
+
+.paper-item a {
+  color: var(--accent, #5cacf6);
+  text-decoration: none;
+}
+
+.paper-item a:hover {
+  text-decoration: underline;
+}
+
+/* =========================================================
+   6. RESPONSIVE BEHAVIOR
+   ========================================================= */
+
+/* Medium screens & down: stack profile, content, footer */
+@media (max-width: 960px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "profile"
+      "content"
+      "footer";
+    row-gap: 1.75rem;
+  }
+
+  .profile-header {
+    align-items: center;
+    text-align: center;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    max-width: 100%;
+  }
+
+  .info-basic {
+    align-items: center;
+  }
+
+  .tagline {
+    max-width: 240px;  /* match mobile photo width */
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .profile-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* Slightly smaller phones: allow wrapping icons cleanly */
+@media (max-width: 540px) {
+  .profile-links {
+    justify-content: center;
+  }
+}
+
+/* Very small phones: shrink icons so everything fits */
+@media (max-width: 480px) {
+  .profile-links .icon-link {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }  
 }

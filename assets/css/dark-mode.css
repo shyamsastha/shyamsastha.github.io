@@ -11,18 +11,16 @@ html.dark body {
   color: #eee !important;
 }
 
-/* Header and Footer */
-html.dark .page-header, 
-html.dark .page-footer {
-  background-color: #222 !important;
-  color: #bbb !important;
+/* Header */
+html.dark .site-header {
+  background-color: #050505 !important;
+  color: #f5f5f5 !important;
 }
 
 /* Links */
 html.dark a {
   color: #bb86fc !important;
 }
-
 html.dark a:hover {
   color: #ff79c6 !important;
 }
@@ -34,31 +32,20 @@ html.dark button {
   border: 1px solid #bb86fc !important;
 }
 
-/* Navbar Links */
-html.dark .container a {
-  color: #bb86fc !important;
-}
-
-html.dark .container a:hover {
-  color: #ff79c6 !important;
-}
-
-/* ---------- Profile links: dark mode overrides ---------- */
+/* Profile icon links */
 html.dark .profile-links .icon-link {
   color: #9aa6b2; /* muted light for dark background */
   background: transparent;
 }
-
 html.dark .profile-links .icon-link:hover,
 html.dark .profile-links .icon-link:focus {
-  color: #58f0d4; /* accent in dark mode */
+  color: #58f0d4;
   transform: translateY(-2px);
 }
 
-/* subtle halo for legacy image icons if any are left */
+/* subtle halo for legacy image icons */
 html.dark .profile-links img {
   background-color: rgba(255,255,255,0.06);
   border-radius: 6px;
   padding: 4px;
 }
-

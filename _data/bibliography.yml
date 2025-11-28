@@ -1,0 +1,36 @@
+# Updating recent pubs on top
+
+- year: 2025
+  author: "Shyama Sastha Krishnamoorthy Srinivasan, Mohan Kumar, and Pushpendra Singh"
+  title: "Unpacking Personal(?!) Health Informatics for Proactive Collective Care in India"
+  venue: "ArXiv"
+  external_link: "https://doi.org/10.48550/arXiv.2509.01231"
+  internal_link: "https://arxiv.org/pdf/2509.01231"
+
+- year: 2025
+  author: "Shyama Sastha Krishnamoorthy Srinivasan, Mohan Kumar, and Pushpendra Singh"
+  title: "Leveraging Familiarity with Television to Enrich Older Adults' Engagement and Wellbeing: A Feasibility Study Using Video Probes"
+  venue: "CSCW"
+  external_link: "https://doi.org/10.1145/3757624"
+  internal_link: "https://dl.acm.org/doi/pdf/10.1145/3757624"
+
+- year: 2025
+  author: "Shyama Sastha Krishnamoorthy Srinivasan, Arhaan Bahadur, Suruchi Singh, Swati Kedia gupta, Vanya Jain, Koushik Sinha Deb, Mohan Kumar, and Pushpendra Singh"
+  title: "Demystifying Mental Health Reports Through an LLM-based Approach"
+  venue: "CHI EA"
+  external_link: "https://doi.org/10.48550/arXiv.2509.01231"
+  internal_link: "https://arxiv.org/pdf/2509.01231"
+
+- year: 2024
+  author: "Shyama Sastha Krishnamoorthy Srinivasan, Siddharth Singh, Pushpendra Singh, and Mohan Kumar"
+  title: "BLIPS: Bluetooth locator for an Indoor Positioning System in Realtime"
+  venue: "COMPASS"
+  external_link: "https://doi.org/10.1145/3674829.3675057"
+  internal_link: "https://dl.acm.org/doi/pdf/10.1145/3674829.3675057"
+
+- year: 2024
+  author: "Shyama Sastha Krishnamoorthy Srinivasan, Avi Gupta, and Pankaj Jalote"
+  title: "An Experience Report on Teaching a Large Introductory Programming Course in Hybrid Mode."
+  venue: "SIGCSE"
+  external_link: "https://doi.org/10.1145/3626253.3635486"
+  internal_link: "https://dl.acm.org/doi/pdf/10.1145/3626253.3635486"

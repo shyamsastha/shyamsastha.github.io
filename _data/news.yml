@@ -1,0 +1,50 @@
+# First 6 tiems to be displayed on the website
+- date: Sep 2025
+  description: "Health Sharing Study for Collective Care published in arXiv"
+  icon: "fa-solid fa-paperclip"
+  color: "chartreuse"
+
+- date: Aug 2025
+  description: "TIES Paper accepted at CSCW '25"
+  icon: "fa-solid fa-paper-plane"
+  color: "cornflowerblue"
+
+- date: Feb 2025
+  description: "WiP Paper accepted at CHI '25 Late-breaking Work"
+  icon: "fa-solid fa-paper-plane"
+  color: "cornflowerblue"
+
+- date: Jul 2024
+  description: "Short Paper on BLIPS accepted at ACM SIGCHI/SIGCAS COMPASS '24"
+  icon: "fa-solid fa-paper-plane"
+  color: "cornflowerblue"
+
+- date: Mar 2024
+  description: "Position Paper on analyzing missing physiological data for health management accepted at PhysioCHI '24 Workshop at CHI '24"
+  icon: "fa-solid fa-paperclip"
+  color: "chartreuse"
+
+- date: Mar 2024
+  description: "Position Paper on generating synthetic physiological data for health management accepted at LLMCHI '24 Workshop at CHI '24"
+  icon: "fa-solid fa-paperclip"
+  color: "chartreuse"
+
+- date: Mar 2024
+  description: "Poster on hybrid teaching accepted at SIGCSE TS '24"
+  icon: "fa-solid fa-paper-plane"
+  color: "cornflowerblue"
+
+- date: Feb 2024
+  description: "Poster on BLIPS accepted at MLSS '24, Okinawa, Japan. Also received the travel grant to attend the summer school!"
+  icon: "fa-solid fa-paperclip"
+  color: "chartreuse"
+
+- date: Dec 2022
+  description: "Poster on Positive Aging at ACM SIGCHI Symposium for HCI & Friends '22, Mumbai, India. Also received the travel grant to attend the symposium!"
+  icon: "fa-solid fa-paperclip"
+  color: "chartreuse"
+
+- date: Jan 2022
+  description: "Joined Ph.D. at IIIT-Delhi, under the guidance of [Prof. Pushpendra Singh](https://www.iiitd.ac.in/pushpendra) and [Prof. Mohan Kumar](https://www.rit.edu/directory/mjkvcs-mohan-kumar)"
+  icon: "fa fa-sign-in"
+  color: "chocolate"

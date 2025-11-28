@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/dark-mode.css' | relative_url }}">
     {% include head-custom.html %}
+    <link rel="icon" href="{{ site.favicon }}" type="image/x-icon">
   </head>
   <body>
     <!-- ========== TOP NAV ========== -->
@@ -20,12 +21,12 @@
           {{ site.nav_name | default: site.title | default: "Your Name" }}
         </div>
 
-        <!-- Right: primary inline links (first 4), hamburger, dropdowns -->
+        <!-- Right: primary inline links (first 3), hamburger, dropdowns -->
         <nav id="site-nav" class="site-nav" aria-label="Main navigation">
           <div class="nav-primary" role="menubar">
             {% if site.data.navigation and site.data.navigation.main %}
               {% for item in site.data.navigation.main %}
-                {% if forloop.index <= 4 %}
+                {% if forloop.index <= 3 %}
                   <a class="nav-link" href="{{ item.url | relative_url }}">{{ item.title }}</a>
                 {% endif %}
               {% endfor %}
@@ -62,15 +63,72 @@
     </header>
 
     <!-- ========== PAGE CONTENT ==========
-         IMPORTANT: Shifting profile block inside the page (index.md)
+         IMPORTANT: Moving profile block back from Index to html
     -->
-    <main class="site-main wrap" role="main">
-      {{ content }}
-    </main>
+    <main class="site-main" role="main">
+      <div class="wrap main-grid">
 
-    <footer class="site-footer wrap" role="contentinfo">
-      <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-    </footer>
+        <!-- ===== PROFILE HEADER (like the sample site) ===== -->
+        <header class="profile-header">
+
+          <div class="info-basic">
+            <img
+              class="profile-photo"
+              src="{{ site.logo | relative_url }}"
+              alt="{{ site.title | escape }}"
+              data-images="{{ '/assets/images/profile/1000027231.jpg' | relative_url }},{{ '/assets/images/profile/DSC_0039.jpg' | relative_url }},{{ '/assets/images/profile/PXL_20250425_004018099_PORTRAIT.jpg' | relative_url }},{{ '/assets/images/profile/portrait_2.jpeg' | relative_url }}"
+            />
+
+            {% if site.position or site.affiliation %}
+            <div class="role">
+              <p class="role-line">
+                {% if site.position %}{{ site.position }}{% endif %}
+                {% if site.position and site.affiliation %} @ {% endif %}
+                {% if site.affiliation %}{{ site.affiliation }}{% endif %}
+              </p>
+            </div>
+            {% endif %}
+
+            {% if site.description %}
+            <p class="tagline">{{ site.description }}</p>
+            {% endif %}
+          </div>
+
+          <!-- Social / profile links -->
+          <nav class="profile-links" aria-label="profile links">
+            <a class="icon-link" href="{{ '/assets/cv/Sastha_research_cv.pdf' | relative_url }}" target="_blank" rel="noopener" aria-label="CV"><i class="fa-solid fa-file-lines"></i></a>
+            <a class="icon-link" href="{{ site.github }}" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a class="icon-link" href="{{ site.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a class="icon-link" href="{{ site.twitter }}" target="_blank" rel="noopener" aria-label="Twitter/X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a class="icon-link" href="{{ site.orcid }}" target="_blank" rel="noopener" aria-label="ORCID"><i class="fa-brands fa-orcid"></i></a>
+            <a class="icon-link" href="{{ site.google_scholar }}" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
+            <a class="icon-link" href="mailto:{{ site.email | escape }}" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a class="icon-link" href="https://bsky.app/profile/sasthasrinivasan.bsky.social" target="_blank" rel="noopener" aria-label="Bluesky"><i class="fa-brands fa-bluesky"></i></a>
+          </nav>
+
+          <!-- Dark mode toggle -->
+          <button id="dark-mode-toggle" class="dark-toggle-btn" aria-label="Toggle dark mode">
+            <span class="dark-icon">🌙</span> Dark Mode
+          </button>
+        </header>
+
+        <!-- ===== PAGE CONTENT (sections from index.md) ===== -->
+        <section class="page-content">
+          {{ content }}
+        </section>
+
+        <!-- ===== FOOTER (INSIDE GRID) ===== -->
+        <footer class="site-footer">
+          <p>
+            <small>
+              Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a><br>
+              Updated: {{ "now" | date: "%A, %-d %b %Y" }}
+            </small>
+          </p>
+        </footer>
+
+      </div> <!-- /.wrap main grid-->
+    </main>
 
     <!-- scripts (keep dark-mode-toggle.js as you already have it) -->
     <script src="{{ '/assets/js/nav-toggle.js' | relative_url }}"></script>
